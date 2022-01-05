@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace GordsSimpleApp
 {
-    public static class RootHtmlResponse
+    public static class BasicHtmlResponse
     {
-        [FunctionName("RootHtmlResponse")]
+        [FunctionName("BasicHtmlResponse")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "/")] HttpRequest req,
             ILogger log)
