@@ -29,9 +29,9 @@ namespace GordsSimpleApp
 
             string name = req.Query["name"];
 
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+            // string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+            // dynamic data = JsonConvert.DeserializeObject(requestBody);
+            // name = name ?? data?.name;
 
             return new JsonResult(new ReturnObj() { TrafficId = Environment.GetEnvironmentVariable("TRAFFICID"), Name=name });
         }
