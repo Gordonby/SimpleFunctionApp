@@ -1,5 +1,8 @@
-# SimpleFunctionApp
-Just a simple web app to consume for test deployments
+# Simple Function App
+
+Just a simple c# Azure Function App to use for test deployments
+
+.NET6 / v4 Functions Runtime
 
 ## Routes
 
