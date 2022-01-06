@@ -28,4 +28,8 @@ resource codeDeploy 'Microsoft.Web/sites/sourcecontrols@2021-01-15' = if (!empty
     isManualIntegration: true
   }
 }
+
+resource functionApp 'Microsoft.Web/sites@2021-02-01' = {
+...
+}
 ```
